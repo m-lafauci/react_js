@@ -8,9 +8,8 @@ function App() {
   return (
     <div className='container-fluid'>
       <NavBar />
-      <ItemListContainer />
-      
-       
+      <hr />
+      <ItemListContainer greeting="Texto de prueba" />
     </div>
   );
 }

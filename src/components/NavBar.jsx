@@ -5,7 +5,7 @@ import CartWidget from "./CartWidget";
 const NavBar = () => {
     return(
     <div>
-      <nav className="navbar sticky-top navbar-expand-lg mb-4 d-flex align-items-center">
+      <nav className="navbar fixed-top navbar-expand-lg mb-4 d-flex align-items-center">
         <div className="container-fluid">
           <a className="navbar-brand">
             <img alt="Style" src={logo} href="#" />
