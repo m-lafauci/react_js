@@ -11,6 +11,7 @@
   position: fixed;
   z-index: 99;
   padding-right: 10px;
+  margin-bottom: 50px;
 }
 
 .navbar ul li a{
@@ -27,6 +28,11 @@
   color: white;
   background-color: darkslategray;
   font-weight: bold;
+}
+
+h2{
+  margin-top: 100px;
+  text-align: center;
 }
 
 
