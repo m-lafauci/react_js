@@ -9,8 +9,8 @@ function App() {
     <div className='container-fluid'>
       <NavBar />
       <hr />
-      <ItemListContainer greeting="Texto de prueba" />
-    </div>
+      <ItemListContainer greeting="Este es un mensaje de prueba en React" />
+      </div>
   );
 }
 

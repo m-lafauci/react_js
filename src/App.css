@@ -34,4 +34,12 @@ h1{
   text-align: center;
 }
 
+.counter{
+  width: fit-content;
+  background-color: orange;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
 
