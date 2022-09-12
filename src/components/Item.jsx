@@ -12,7 +12,7 @@ const Item = ({ info }) => {
         <div className="card-body">
           <h4 className="card-title">{nombreProducto}</h4>
           <h5 className="card-text">${precio}</h5>
-          {<ItemCount />}
+          <ItemCount stock={5} initial={1} />
           <p className="text-center"><em>El stock es de <b>{stock}</b> unidades</em></p>
         </div>
       </div>
