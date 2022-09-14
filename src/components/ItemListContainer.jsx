@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import ItemList from "./ItemList";
+import { useParams } from 'react-router-dom';
 
 const items = [
     {"id": 1, "nombreProducto": "BUZO BLOOM", "categoria": "BUZOS", "precio": 10700, "imagen": "./assets/buzo1.jpg", "stock": 2},
@@ -49,16 +50,22 @@ const items = [
 
 const ItemListContainer = (props) => {
     const [productos, setProductos] = useState([]);
+
+    const { categoriaId } = useParams();
   
     useEffect(() => {
-      const obtenerProductos = new Promise((resolve) => {
+      const obtenerProductos = new Promise(resolve => {
         setTimeout(() => {
           resolve(items);
-        }, 2000);
+        }, 1000);
       });
-  
-      obtenerProductos.then((res) => setProductos(res));
-    }, []);
+
+      if (categoriaId) {
+        obtenerProductos.then(res => setProductos(res.filter(item => item.categoria === categoriaId)));
+      }else{
+        obtenerProductos.then(res => setProductos(res));
+      }
+    }, [categoriaId]);
   
     return (
       <div className="container">
