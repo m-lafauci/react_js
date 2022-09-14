@@ -2,9 +2,9 @@
 
 Mi proyecto simula el Ecommerce de una marca de indumentaria femenina llamada "Style".
 El mismo cuenta con una barra de navegación que permite filtrar los productos según su categoría (remeras, camisas, etc.).
-La barra de navegación también cuenta con una barra de búsqueda y un carrito de compras. (ambos en desarrollo)
+La barra de navegación también cuenta con una barra de búsqueda y un carrito de compras (ambos en desarrollo).
 Los productos se encuentran renderizados en formato de tarjetas en los cuales se pueden ver imagen, nombre, precio y stock de los mismos.
-La cantidad a comprar se puede modificar mediante un contador que valida dichas cantidades con las disponibilidad del artículo. (validación en desarrollo)
+La cantidad a comprar se puede modificar mediante un contador que valida dichas cantidades con las disponibilidad del artículo (validación en desarrollo).
 También se puede acceder a un breve resumen y/o detalle de cada uno de los artículos clickeando en la imagen del producto.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
