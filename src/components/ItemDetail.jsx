@@ -1,13 +1,17 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
+import { useCartContext } from '../context/CartContext';
 import ItemCount from "./ItemCount";
 import { Link } from 'react-router-dom';
 
-const ItemDetail = ({ item }) => {
+export const ItemDetail = ({ item }) => {
 
-    const [goToCart, setGoToCart] = useState(false);
+    const [ goToCart, setGoToCart ] = useState(false);
+
+    const { addProduct } = useCartContext();
 
     const onAdd = (quantity) => {
-        setGoToCart(true);
+            setGoToCart(true);
+            addProduct(item, quantity);
     }
     
     return (
@@ -27,7 +31,7 @@ const ItemDetail = ({ item }) => {
                     {
                         goToCart
                         ? <Link to='/cart'><button className='btn btn-success'>Finalizar compra</button></Link>                    
-                        : <ItemCount initial={1} stock={item.stock} onAdd={onAdd} />
+                        : <ItemCount initial={1} stock={5} onAdd={onAdd} />
                     }
                     </div>
                     </div>
